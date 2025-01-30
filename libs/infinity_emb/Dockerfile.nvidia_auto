@@ -49,6 +49,9 @@ RUN apt-get install --no-install-recommends -y git && poetry run python -m pip i
 FROM builder AS testing
 # install lint and test dependencies
 RUN poetry install --no-interaction --no-ansi  --extras "${EXTRAS}" --with lint,test && poetry cache clear pypi --all
+
+RUN poetry run pip install transformers==4.46.0
+
 # lint 
 RUN poetry run ruff check .
 RUN poetry run mypy .
