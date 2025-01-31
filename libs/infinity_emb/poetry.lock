@@ -3840,7 +3840,7 @@ files = [
 name = "safetensors"
 version = "0.4.5"
 description = ""
-optional = true
+optional = false
 python-versions = ">=3.7"
 groups = ["main"]
 markers = "(extra == \"ct2\" or extra == \"torch\" or extra == \"all\" or extra == \"optimum\" or extra == \"vision\") and (python_version >= \"3.12\" or python_version <= \"3.11\")"
@@ -4099,7 +4099,7 @@ train = ["accelerate (>=0.20.3)", "datasets"]
 name = "sentencepiece"
 version = "0.2.0"
 description = "SentencePiece python wrapper"
-optional = true
+optional = false
 python-versions = "*"
 groups = ["main"]
 markers = "(python_version >= \"3.12\" or python_version <= \"3.11\") and extra == \"ct2\""
@@ -4377,7 +4377,7 @@ torchvision = "*"
 name = "tokenizers"
 version = "0.20.1"
 description = ""
-optional = true
+optional = false
 python-versions = ">=3.7"
 groups = ["main"]
 markers = "(extra == \"ct2\" or extra == \"torch\" or extra == \"all\" or extra == \"optimum\" or extra == \"vision\") and (python_version >= \"3.12\" or python_version <= \"3.11\")"
@@ -4627,7 +4627,7 @@ telegram = ["requests"]
 name = "transformers"
 version = "4.46.2"
 description = "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow"
-optional = true
+optional = false
 python-versions = ">=3.8.0"
 groups = ["main"]
 markers = "(extra == \"ct2\" or extra == \"torch\" or extra == \"all\" or extra == \"optimum\" or extra == \"vision\") and (python_version >= \"3.12\" or python_version <= \"3.11\")"
@@ -5555,4 +5555,4 @@ vision = ["colpali-engine", "pillow", "timm", "torchvision"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9,<4"
-content-hash = "b33fe4be05f6bd1cece8d0ec3cf1cb3be1ca10f0b8973092153aa65e2d2135e3"
+content-hash = "7a25b810cb58fc4e1089d7ff9fb81a07610db062ac1a92c3160231a1ea10407b"
